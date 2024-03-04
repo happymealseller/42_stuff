@@ -19,9 +19,10 @@ void ft_ultimate_div_mod(int *a, int *b)
 
 	num_a = *a;
 	num_b = *b;
+	
 	result = num_a / num_b;
 	remain = num_a % num_b;
 
 	*a = result;
-	*b - remain;
+	*b = remain;
 }

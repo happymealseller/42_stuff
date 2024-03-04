@@ -15,6 +15,9 @@ void ft_swap (int *a, int *b)
 	int value_a;
 	int value_b;
 
-	value_b = *a;
-	value_a = *b;
+	value_a = *a;
+	value_b = *b;
+
+	*a = value_b;
+	*b = value_a;
 }
