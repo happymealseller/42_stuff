@@ -6,14 +6,13 @@
 /*   By: jun-tan <jun-tan@student.42singapore.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 17:32:30 by jun-tan           #+#    #+#             */
-/*   Updated: 2024/03/04 17:37:51 by jun-tan          ###   ########.fr       */
+/*   Updated: 2024/03/07 20:10:32 by jun-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-void ft_div_mod(int a, int b, int *div, int *mod)
+void	ft_div_mod(int a, int b, int *div, int *mod)
 {
-	int result;
-	int remainder;
+	int	result;
+	int	remainder;
 
 	result = a / b;
 	remainder = a % b;

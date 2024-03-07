@@ -6,18 +6,16 @@
 /*   By: jun-tan <jun-tan@student.42singapore.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/04 17:28:01 by jun-tan           #+#    #+#             */
-/*   Updated: 2024/03/04 17:32:06 by jun-tan          ###   ########.fr       */
+/*   Updated: 2024/03/07 19:38:51 by jun-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-void ft_swap (int *a, int *b)
+void	ft_swap(int *a, int *b)
 {
-	int value_a;
-	int value_b;
+	int	value_a;
+	int	value_b;
 
 	value_a = *a;
 	value_b = *b;
-
 	*a = value_b;
 	*b = value_a;
 }
