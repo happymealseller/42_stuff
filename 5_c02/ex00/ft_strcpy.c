@@ -1,27 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jun-tan <jun-tan@student.42singapore.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/07 21:17:21 by jun-tan           #+#    #+#             */
-/*   Updated: 2024/03/07 21:20:37 by jun-tan          ###   ########.fr       */
+/*   Created: 2024/03/07 20:38:25 by jun-tan           #+#    #+#             */
+/*   Updated: 2024/03/07 20:41:04 by jun-tan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-char	*ft_strupcase(char *str)
-{
+char	*ft_strcpy(char *dest, char *src)
+{	
 	int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (src[i] != '\0')
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-		{
-			str[i] = str[i] - 32;
-		}
+		dest[i] = src[i];
 		i++;
 	}
-	return (str);
+	dest[i] = '\0';
+	return (dest);
 }

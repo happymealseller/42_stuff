@@ -1,21 +1,33 @@
-int ft_str_is_numeric(char *str)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jun-tan <jun-tan@student.42singapore.      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/07 20:59:13 by jun-tan           #+#    #+#             */
+/*   Updated: 2024/03/07 21:33:08 by jun-tan          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+int	ft_str_is_numeric(char *str)
 {
-        int i;
-        i = 0;
+	int	i;
 
-
-        while (str[i] != '\0') {
-                // no boolean in c so we use int for 0 false , 1 true
-
-                if (str[i] >= '0' && str[i] <= '9')
+	i = 0;
+	if (str[0] == '\0')
+	{
+		return (0);
+	}
+	while (str[i] != '\0')
+	{
+		if (str[i] >= '0' && str[i] <= '9')
 		{
-                	i++;
-                } else {
-                        return 0;
-                }
-        }
-        return 1;
-	
+			i++;
+		}
+		else
+		{
+			return (0);
+		}
+	}
+	return (1);
 }
-
-

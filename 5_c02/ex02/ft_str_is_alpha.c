@@ -1,24 +1,30 @@
-int ft_str_is_alpha(char *str)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_alpha.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jun-tan <jun-tan@student.42singapore.      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/07 20:46:15 by jun-tan           #+#    #+#             */
+/*   Updated: 2024/03/07 20:55:56 by jun-tan          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+int	ft_str_is_alpha(char *str)
 {
-	int i;
+	int	i;
+
 	i = 0;
-
-
-	while (str[i] != '\0') {
-		// no boolean in c so we use int for 0 false , 1 true
-		int condition1;
-		int condition2;
-
-		condition1 = (str[i] >= 'a' && str[i] <= 'z');
-		condition2 = (str[i] >= 'A' && str[i] <= 'Z');
-
-
-		if (condition1 || condition2) {
-		i++;
-		} else {
-			return 0;
+	while (str[i] != '\0')
+	{
+		if ((str[i] >= 'a' && str[i] <= 'z')
+			|| (str[i] >= 'A' && str[i] <= 'Z'))
+		{
+			i++;
+		}
+		else
+		{
+			return (0);
 		}
 	}
-	return 1;
+	return (1);
 }
-

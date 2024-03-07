@@ -1,19 +1,26 @@
-char *ft_strlowcase(char *str)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlowcase.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jun-tan <jun-tan@student.42singapore.      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/07 21:21:18 by jun-tan           #+#    #+#             */
+/*   Updated: 2024/03/07 21:24:02 by jun-tan          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+char	*ft_strlowcase(char *str)
 {
+	int	i;
 
-        int i;
-
-        i = 0;
-
-        while (str[i] != '\0') {
-                if (str[i] >= 'A' && str[i] <= 'Z')
-                {
-                        str[i] = str[i] + 32;
-                }
-                i++;
-        }
-
-        return str;
-
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'A' && str[i] <= 'Z')
+		{
+			str[i] = str[i] + 32;
+		}
+		i++;
+	}
+	return (str);
 }
-

@@ -1,20 +1,29 @@
-int ft_str_is_printable(char *str)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jun-tan <jun-tan@student.42singapore.      +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/07 21:11:43 by jun-tan           #+#    #+#             */
+/*   Updated: 2024/03/07 21:15:21 by jun-tan          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+int	ft_str_is_printable(char *str)
 {
-	      int i;
-        i = 0;
+	int	i;
 
-
-        while (str[i] != '\0') {
-
-                if (str[i] >= 32 && str[i] <= 126)
-                {
-                        i++;
-                } else {
-                        return 0;
-                }
-        }
-        return 1;
-
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 32 && str[i] <= 126)
+		{
+			i++;
+		}
+		else
+		{
+			return (0);
+		}
+	}
+	return (1);
 }
-
-
